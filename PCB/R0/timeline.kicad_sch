@@ -1,0 +1,5391 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "70cafa81-c4e4-4196-a002-0708542aba48")
+	(paper "A4")
+	(lib_symbols
+		(symbol "LED:WS2812B"
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 5.08 5.715 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right bottom)
+				)
+			)
+			(property "Value" "WS2812B"
+				(at 1.27 -5.715 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+				(at 1.27 -7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+				(at 2.54 -9.525 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Description" "RGB LED with integrated controller"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "RGB LED NeoPixel addressable"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "LED*WS2812*PLCC*5.0x5.0mm*P3.2mm*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "WS2812B_0_0"
+				(text "RGB"
+					(at 2.286 -4.191 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+			)
+			(symbol "WS2812B_0_1"
+				(polyline
+					(pts
+						(xy 1.27 -2.54) (xy 1.778 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -3.556) (xy 1.778 -3.556)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.286 -1.524) (xy 1.27 -2.54) (xy 1.27 -2.032)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.286 -2.54) (xy 1.27 -3.556) (xy 1.27 -3.048)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.683 -1.016) (xy 3.683 -3.556) (xy 3.683 -4.064)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.699 -1.524) (xy 2.667 -1.524) (xy 3.683 -3.556) (xy 4.699 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.699 -3.556) (xy 2.667 -3.556)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 5.08 5.08)
+					(end -5.08 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "WS2812B_1_1"
+				(pin input line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "DIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 7.62 270)
+					(length 2.54)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "VSS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "DOUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Skrubis:100n 50V X7R 0603"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C?"
+				(at -3.81 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "100n 50V X7R 0603"
+				(at -3.81 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+				(at -0.9652 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "LCSC" "C314282"
+				(at -5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Stock" "N"
+				(at -7.62 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "100n 50V X7R 0603_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "100n 50V X7R 0603_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:GND"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:VBUS"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "VBUS"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"VBUS\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "VBUS_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "VBUS_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(junction
+		(at 60.96 27.94)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "179cf7bd-f828-42b5-b0a2-5b8ab4844505")
+	)
+	(junction
+		(at 118.11 127)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "276a1900-5665-43b5-9afc-a328184f957f")
+	)
+	(junction
+		(at 118.11 105.41)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "482c31cc-750c-45d1-94fe-1886c7f3aaba")
+	)
+	(junction
+		(at 60.96 62.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4e415a56-9822-4538-aa60-ca69fc46a581")
+	)
+	(junction
+		(at 118.11 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5049d051-1c0f-41cd-8778-2f8f9079c7d9")
+	)
+	(junction
+		(at 60.96 40.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "756bc4bc-c812-433f-9391-aea0f588c1aa")
+	)
+	(junction
+		(at 60.96 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "89e06dff-5ed1-42a5-8c2e-94bdf29b51e3")
+	)
+	(junction
+		(at 60.96 105.41)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8b6e02a8-bae5-4ccb-8a14-3ff89c5aeb89")
+	)
+	(junction
+		(at 118.11 148.59)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9263fa85-e4e5-479a-9d74-420aaa30617f")
+	)
+	(junction
+		(at 118.11 170.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "98c6af61-99db-46c8-b321-e5504c4faaf5")
+	)
+	(junction
+		(at 60.96 170.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b553b98b-4688-4788-8e61-f6538c0b93bf")
+	)
+	(junction
+		(at 60.96 148.59)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dd07eeb3-953b-4094-9fa7-b8815aff2780")
+	)
+	(junction
+		(at 60.96 127)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f048c948-ffdf-4d75-b885-dbad22776e24")
+	)
+	(no_connect
+		(at 127 76.2)
+		(uuid "d3622d06-f382-4f05-bb22-9b607e01518e")
+	)
+	(wire
+		(pts
+			(xy 99.06 127) (xy 105.41 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "034a3aec-5e49-4b48-85ca-93a7c451a21e")
+	)
+	(wire
+		(pts
+			(xy 41.91 83.82) (xy 48.26 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0788f32d-4fd3-46fd-bed1-c2b9e48060bf")
+	)
+	(wire
+		(pts
+			(xy 55.88 105.41) (xy 60.96 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ab22057-c6e8-4a1d-9708-7185b347a382")
+	)
+	(wire
+		(pts
+			(xy 90.17 33.02) (xy 69.85 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d0c619e-ad1c-473f-b341-7a285f340ff1")
+	)
+	(wire
+		(pts
+			(xy 81.28 176.53) (xy 81.28 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0e9e2224-0e75-4881-8996-5cab7b73a422")
+	)
+	(wire
+		(pts
+			(xy 60.96 27.94) (xy 60.96 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "107b6cb0-9e7b-4440-993a-23164c8e16b9")
+	)
+	(wire
+		(pts
+			(xy 81.28 127) (xy 77.47 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "126f3b12-161f-4c3c-8afe-446f673e9fb4")
+	)
+	(wire
+		(pts
+			(xy 118.11 148.59) (xy 119.38 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1382800a-0b9f-4d48-b971-1f921148fce8")
+	)
+	(wire
+		(pts
+			(xy 60.96 170.18) (xy 62.23 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "157d0918-5736-4319-b9cc-d120f417330b")
+	)
+	(wire
+		(pts
+			(xy 118.11 27.94) (xy 60.96 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "18353a62-49de-49bc-8cd0-1993df3192b6")
+	)
+	(wire
+		(pts
+			(xy 60.96 62.23) (xy 60.96 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1858d9cf-dba3-4ed7-a328-83bf9d12da86")
+	)
+	(wire
+		(pts
+			(xy 69.85 156.21) (xy 69.85 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "19003af7-4953-42e7-949d-d194d92da0a1")
+	)
+	(wire
+		(pts
+			(xy 60.96 148.59) (xy 60.96 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "19056ff3-b695-423d-b22d-ba25e9fc6cd5")
+	)
+	(wire
+		(pts
+			(xy 118.11 127) (xy 118.11 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "192fcd4e-77cf-45a2-a4ee-41f3d6bd0b55")
+	)
+	(wire
+		(pts
+			(xy 41.91 170.18) (xy 48.26 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "246bb83e-6246-443e-be6c-8b977e005adf")
+	)
+	(wire
+		(pts
+			(xy 81.28 83.82) (xy 77.47 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "25cebdee-e2fc-431d-a408-64dc43d218b5")
+	)
+	(wire
+		(pts
+			(xy 55.88 40.64) (xy 60.96 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "271e8497-bc10-4dd7-826a-9cbfcd77a094")
+	)
+	(wire
+		(pts
+			(xy 55.88 83.82) (xy 60.96 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "292fafb9-ecf2-48f8-9236-13c339700f50")
+	)
+	(wire
+		(pts
+			(xy 81.28 68.58) (xy 81.28 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b40a83c-9dc1-473a-bd9b-dfa769eb81d9")
+	)
+	(wire
+		(pts
+			(xy 138.43 170.18) (xy 134.62 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2c5275ff-15e3-4d4f-a378-f12a2265632f")
+	)
+	(wire
+		(pts
+			(xy 69.85 91.44) (xy 69.85 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f4424e9-6918-4d3f-948a-c7dcb53ada32")
+	)
+	(wire
+		(pts
+			(xy 138.43 111.76) (xy 138.43 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "321d93ee-1d1a-4358-98b6-5c6f51be3bab")
+	)
+	(wire
+		(pts
+			(xy 55.88 127) (xy 60.96 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "324dca74-bd81-440e-a8a6-27ba97ade586")
+	)
+	(wire
+		(pts
+			(xy 81.28 133.35) (xy 81.28 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "334ea70d-afba-4b61-a0aa-d3887c1f8ef8")
+	)
+	(wire
+		(pts
+			(xy 127 91.44) (xy 127 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a7d3d82-9d17-4cdf-9da4-e29e0a05cb4f")
+	)
+	(wire
+		(pts
+			(xy 99.06 148.59) (xy 105.41 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "426226c9-7c0e-4795-b503-e9708a0ccb60")
+	)
+	(wire
+		(pts
+			(xy 113.03 148.59) (xy 118.11 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4899278e-e982-4720-8488-37d12bbf817e")
+	)
+	(wire
+		(pts
+			(xy 118.11 105.41) (xy 119.38 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "48a31d11-65de-444a-8273-bf6b121f6f5c")
+	)
+	(wire
+		(pts
+			(xy 55.88 62.23) (xy 60.96 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4b2c688d-d8c4-403c-b7d0-4bc237cb2d12")
+	)
+	(wire
+		(pts
+			(xy 81.28 46.99) (xy 81.28 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4fcbbe7c-8c18-42ec-ae4c-c9c53b6dcd11")
+	)
+	(wire
+		(pts
+			(xy 41.91 148.59) (xy 48.26 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "563fda6b-94a7-4fa8-a7e7-6fb3c7a010fb")
+	)
+	(wire
+		(pts
+			(xy 69.85 134.62) (xy 69.85 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "57488308-2d5f-4a1f-b6ea-3e9c3153e866")
+	)
+	(wire
+		(pts
+			(xy 60.96 83.82) (xy 60.96 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "57eff20f-84fa-4901-a619-0dc1ad78d9b2")
+	)
+	(wire
+		(pts
+			(xy 138.43 176.53) (xy 138.43 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "58bae102-1ff4-4812-a82a-dda713568321")
+	)
+	(wire
+		(pts
+			(xy 60.96 148.59) (xy 62.23 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5a0c677f-9493-4627-94b1-ca7d6615a770")
+	)
+	(wire
+		(pts
+			(xy 41.91 40.64) (xy 48.26 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b85181e-e4b1-4f04-a099-2dbf2667aebf")
+	)
+	(wire
+		(pts
+			(xy 60.96 127) (xy 60.96 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5fef22af-7f79-4470-bbc3-110bfb81d5fe")
+	)
+	(wire
+		(pts
+			(xy 60.96 127) (xy 62.23 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6fd95ba6-d8f1-4169-a3e7-cff9a3c833d6")
+	)
+	(wire
+		(pts
+			(xy 60.96 62.23) (xy 62.23 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ffdf082-849c-45e9-b6aa-fa58b952fe59")
+	)
+	(wire
+		(pts
+			(xy 113.03 170.18) (xy 118.11 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "73f16c01-d22c-4af0-ba40-07a3161a27ed")
+	)
+	(wire
+		(pts
+			(xy 63.5 177.8) (xy 69.85 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7410a9d8-ce5b-4405-8c04-12c0cb4afcb8")
+	)
+	(wire
+		(pts
+			(xy 55.88 148.59) (xy 60.96 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "75a92a98-ae63-4f1f-a4f8-d0cc38ea5e0d")
+	)
+	(wire
+		(pts
+			(xy 41.91 105.41) (xy 48.26 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "764a7e89-853d-4199-ac93-fdc01762e935")
+	)
+	(wire
+		(pts
+			(xy 118.11 127) (xy 119.38 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e1a7831-8d52-4914-a581-d716382a2617")
+	)
+	(wire
+		(pts
+			(xy 60.96 40.64) (xy 60.96 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7faa037b-169e-4c59-8b58-2e99dfe1a38f")
+	)
+	(wire
+		(pts
+			(xy 113.03 105.41) (xy 118.11 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "804b1312-8aac-4517-99e2-83475d5181be")
+	)
+	(wire
+		(pts
+			(xy 69.85 113.03) (xy 69.85 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "867eb62e-5b50-4147-9543-7be144ececd0")
+	)
+	(wire
+		(pts
+			(xy 60.96 24.13) (xy 60.96 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c6e16dc-5a9a-4416-9f49-4afbd87696ff")
+	)
+	(wire
+		(pts
+			(xy 60.96 83.82) (xy 62.23 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8dd8ff48-7ace-4d84-8dc7-d3e0524fc9bd")
+	)
+	(wire
+		(pts
+			(xy 138.43 133.35) (xy 138.43 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8de5765a-89b7-460c-ad59-204a2fe89ef1")
+	)
+	(wire
+		(pts
+			(xy 90.17 177.8) (xy 127 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8fd0676e-52db-4c86-87a5-cba96148c0f8")
+	)
+	(wire
+		(pts
+			(xy 99.06 105.41) (xy 105.41 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9558b29b-b9ec-487c-a691-3e29e315a717")
+	)
+	(wire
+		(pts
+			(xy 69.85 69.85) (xy 69.85 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "98ad14b2-3049-4b07-b943-b1ae24a43cfc")
+	)
+	(wire
+		(pts
+			(xy 41.91 127) (xy 48.26 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "99a3740f-ffda-4d01-b790-fd1e0a996f27")
+	)
+	(wire
+		(pts
+			(xy 60.96 40.64) (xy 62.23 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9ff365ef-09da-48ae-babe-cf00b419c047")
+	)
+	(wire
+		(pts
+			(xy 138.43 83.82) (xy 134.62 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a20a884e-b2de-4858-8d6f-ad6cf903b945")
+	)
+	(wire
+		(pts
+			(xy 81.28 40.64) (xy 77.47 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae48716e-77c2-49c0-914f-8bed9dbc8a51")
+	)
+	(wire
+		(pts
+			(xy 69.85 48.26) (xy 69.85 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae6833fd-e7e4-44d5-bec3-2d4a39c0c1b5")
+	)
+	(wire
+		(pts
+			(xy 127 156.21) (xy 127 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af870e23-0bb7-4167-83a1-4dac5cc08106")
+	)
+	(wire
+		(pts
+			(xy 113.03 127) (xy 118.11 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b1852e72-c352-48a6-98f0-5478d7152a53")
+	)
+	(wire
+		(pts
+			(xy 90.17 177.8) (xy 90.17 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b2a55392-587f-48cc-adfd-fdea23b5a693")
+	)
+	(wire
+		(pts
+			(xy 81.28 62.23) (xy 77.47 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b5536f04-6510-45f4-b2ec-40d70970fd12")
+	)
+	(wire
+		(pts
+			(xy 99.06 170.18) (xy 105.41 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b6db2297-253d-4d54-abf0-477d6b06e68b")
+	)
+	(wire
+		(pts
+			(xy 81.28 90.17) (xy 81.28 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bcd55683-2128-4885-a2ea-a30a76441433")
+	)
+	(wire
+		(pts
+			(xy 118.11 83.82) (xy 118.11 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c4f9e938-1a13-4581-a7b2-45f04df78014")
+	)
+	(wire
+		(pts
+			(xy 81.28 148.59) (xy 77.47 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c7b25fb5-902a-4bbd-b125-8125d2841cac")
+	)
+	(wire
+		(pts
+			(xy 138.43 154.94) (xy 138.43 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c8370b87-e85a-4acf-a55c-88b36d8dd90d")
+	)
+	(wire
+		(pts
+			(xy 81.28 170.18) (xy 77.47 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd6b1a00-94e3-4af8-825f-8f0bdf850c4c")
+	)
+	(wire
+		(pts
+			(xy 81.28 105.41) (xy 77.47 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cfb93ff1-b940-4a0d-966f-ea0724d234db")
+	)
+	(wire
+		(pts
+			(xy 138.43 127) (xy 134.62 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d3f70cef-416f-40ec-8135-157857697ae5")
+	)
+	(wire
+		(pts
+			(xy 118.11 105.41) (xy 118.11 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d42522c9-b3b6-42e8-a394-56251ab1a82f")
+	)
+	(wire
+		(pts
+			(xy 60.96 105.41) (xy 60.96 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d79f6c07-af2f-45f1-a93f-348b3cbc7193")
+	)
+	(wire
+		(pts
+			(xy 118.11 27.94) (xy 118.11 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "da45049d-0c0c-4184-9a74-6978f622b95a")
+	)
+	(wire
+		(pts
+			(xy 118.11 83.82) (xy 119.38 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "da7e5330-8acd-47ba-808d-4651fbbf5fe6")
+	)
+	(wire
+		(pts
+			(xy 113.03 83.82) (xy 118.11 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "daaa9684-d449-4d76-a61d-270bfe5f7de9")
+	)
+	(wire
+		(pts
+			(xy 41.91 62.23) (xy 48.26 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc44ca08-20a5-4529-b16c-e22d906b2549")
+	)
+	(wire
+		(pts
+			(xy 81.28 111.76) (xy 81.28 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dd0f857f-6927-4d7d-9ed4-6ff315631f09")
+	)
+	(wire
+		(pts
+			(xy 118.11 148.59) (xy 118.11 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e568ba04-fcff-4810-bc08-527591dc9223")
+	)
+	(wire
+		(pts
+			(xy 55.88 170.18) (xy 60.96 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e7ee3144-0839-4661-80e0-6774753adfa0")
+	)
+	(wire
+		(pts
+			(xy 138.43 148.59) (xy 134.62 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e8aff106-0b3c-499d-b198-23ce4891e22c")
+	)
+	(wire
+		(pts
+			(xy 118.11 170.18) (xy 119.38 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ea1a8874-cdb7-4c38-80e4-ee484c9f1fb1")
+	)
+	(wire
+		(pts
+			(xy 99.06 83.82) (xy 105.41 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ec813268-645b-4ef8-8407-1d164f636285")
+	)
+	(wire
+		(pts
+			(xy 138.43 90.17) (xy 138.43 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ee3336be-5832-4b24-b60b-e489a2347f8e")
+	)
+	(wire
+		(pts
+			(xy 81.28 154.94) (xy 81.28 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f34cd25c-640f-4fc7-a70a-ef1a60c84c37")
+	)
+	(wire
+		(pts
+			(xy 60.96 105.41) (xy 62.23 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f3d644c0-385f-46a8-8e55-0c1ef3cf2147")
+	)
+	(wire
+		(pts
+			(xy 127 113.03) (xy 127 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f47d2e69-a9b0-46a9-b459-5660639cc4ef")
+	)
+	(wire
+		(pts
+			(xy 138.43 105.41) (xy 134.62 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f7ca2217-0f2b-42ae-91b1-b4c20aca1bf6")
+	)
+	(wire
+		(pts
+			(xy 127 134.62) (xy 127 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fde5b404-71a1-40de-ac3d-a3b35acefd97")
+	)
+	(global_label "LED_TIMELINE_DIN"
+		(shape input)
+		(at 63.5 177.8 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "dcb2bb4c-98a5-42f0-80d4-4d9a41ead9fa")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 43.642 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 81.28 68.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0aaf1d96-441a-4320-8841-15a70243d1bd")
+		(property "Reference" "#PWR0346"
+			(at 81.28 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 81.28 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 81.28 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 81.28 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 81.28 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ce7177f2-6d7c-4715-aa8e-036cebd0dae1")
+		)
+		(instances
+			(project "Weatherthing-main-21-30-R0"
+				(path "/ee72ac44-80d7-4001-b898-1221a006b03b/ec168330-9e24-4ba8-8b42-f1f24613dfb2"
+					(reference "#PWR0346")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 69.85 170.18 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0afda384-e183-434f-9d09-eab787f236c5")
+		(property "Reference" "D156"
+			(at 78.232 174.244 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 75.692 176.784 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "weatherthing-footprints:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 77.47 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 79.375 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 69.85 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C22461793"
+			(at 69.85 170.18 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Stock" "297"
+			(at 69.85 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ad5f95fb-8eb4-4847-aec9-259e7156249d")
+		)
+		(pin "3"
+			(uuid "452049ab-fa49-4513-b6d2-20d0e7efdbda")
+		)
+		(pin "2"
+			(uuid "ab003e7b-9094-46b7-8ed3-0f2b3bd6dd56")
+		)
+		(pin "4"
+			(uuid "4d9f6cfa-6c93-4928-b9bd-7ef880c86400")
+		)
+		(instances
+			(project "Weatherthing-main-21-30-R0"
+				(path "/ee72ac44-80d7-4001-b898-1221a006b03b/ec168330-9e24-4ba8-8b42-f1f24613dfb2"
+					(reference "D156")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Skrubis:100n 50V X7R 0603")
+		(at 52.07 62.23 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "107e63ae-c961-4b71-b459-3f8c3a017613")
+		(property "Reference" "C172"
+			(at 52.07 49.53 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100n 50V X7R 0603"
+			(at 52.07 52.07 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 55.88 61.2648 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 52.07 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 52.07 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C314282"
+			(at 52.07 54.61 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" "Y"
+			(at 52.07 57.15 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b57ae68f-5401-403b-b6e9-3daf2752b0af")
+		)
+		(pin "2"
+			(uuid "f6376309-d81e-4421-8bdb-8110db0bab60")
+		)
+		(instances
+			(project "Weatherthing-main-21-30-R0"
+				(path "/ee72ac44-80d7-4001-b898-1221a006b03b/ec168330-9e24-4ba8-8b42-f1f24613dfb2"
+					(reference "C172")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Skrubis:100n 50V X7R 0603")
+		(at 52.07 40.64 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "10a917fd-b78a-4e94-8bba-6acacdd17f07")
+		(property "Reference" "C171"
+			(at 52.07 27.94 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100n 50V X7R 0603"
+			(at 52.07 30.48 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 55.88 39.6748 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 52.07 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 52.07 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C314282"
+			(at 52.07 33.02 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" "Y"
+			(at 52.07 35.56 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6aa4f980-4988-40e9-9e02-181723c9a04b")
+		)
+		(pin "2"
+			(uuid "5c502dc4-ff24-4d3f-a3e0-971123d1e17b")
+		)
+		(instances
+			(project "Weatherthing-main-21-30-R0"
+				(path "/ee72ac44-80d7-4001-b898-1221a006b03b/ec168330-9e24-4ba8-8b42-f1f24613dfb2"
+					(reference "C171")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 99.06 83.82 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1879860e-0073-4afd-b4dc-fe5ba87451a3")
+		(property "Reference" "#PWR0352"
+			(at 99.06 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 99.06 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 99.06 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 99.06 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 99.06 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0b519ef8-1cc9-4854-b2e1-4ea69d043f9b")
+		)
+		(instances
+			(project "Weatherthing-main-21-30-R0"
+				(path "/ee72ac44-80d7-4001-b898-1221a006b03b/ec168330-9e24-4ba8-8b42-f1f24613dfb2"
+					(reference "#PWR0352")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 41.91 105.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1ecc57ee-ffcd-48d6-ac68-3eee869fe5e5")
+		(property "Reference" "#PWR0340"
+			(at 41.91 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 41.91 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 41.91 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 41.91 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 41.91 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1ef90399-f822-487f-bef6-836238dbbcd2")
+		)
+		(instances
+			(project "Weatherthing-main-21-30-R0"
+				(path "/ee72ac44-80d7-4001-b898-1221a006b03b/ec168330-9e24-4ba8-8b42-f1f24613dfb2"
+					(reference "#PWR0340")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Skrubis:100n 50V X7R 0603")
+		(at 52.07 170.18 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1f060977-9f0b-4a3e-b954-6a4e4dec2746")
+		(property "Reference" "C177"
+			(at 52.07 157.48 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100n 50V X7R 0603"
+			(at 52.07 160.02 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 55.88 169.2148 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 52.07 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 52.07 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C314282"
+			(at 52.07 162.56 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" "Y"
+			(at 52.07 165.1 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d8e152ed-1d77-4b4e-944f-d88f2fef70b2")
+		)
+		(pin "2"
+			(uuid "bc3bf75c-448c-4fb5-804c-daac148cdd15")
+		)
+		(instances
+			(project "Weatherthing-main-21-30-R0"
+				(path "/ee72ac44-80d7-4001-b898-1221a006b03b/ec168330-9e24-4ba8-8b42-f1f24613dfb2"
+					(reference "C177")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 41.91 40.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1fd75a0c-9567-4bc4-b407-3d7810079e47")
+		(property "Reference" "#PWR0337"
+			(at 41.91 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 41.91 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 41.91 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 41.91 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 41.91 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c3105987-d5e4-44ad-8673-fb42c594ce41")
+		)
+		(instances
+			(project "Weatherthing-main-21-30-R0"
+				(path "/ee72ac44-80d7-4001-b898-1221a006b03b/ec168330-9e24-4ba8-8b42-f1f24613dfb2"
+					(reference "#PWR0337")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Skrubis:100n 50V X7R 0603")
+		(at 109.22 170.18 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2657d056-82eb-4e9b-bdd5-85171c6fc73f")
+		(property "Reference" "C182"
+			(at 109.22 157.48 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100n 50V X7R 0603"
+			(at 109.22 160.02 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 113.03 169.2148 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 109.22 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 109.22 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C314282"
+			(at 109.22 162.56 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" "Y"
+			(at 109.22 165.1 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0e160856-9ce9-4afc-8bdb-bce2bbd93a99")
+		)
+		(pin "2"
+			(uuid "ce92604e-cada-449b-9daa-84980c87d50f")
+		)
+		(instances
+			(project "Weatherthing-main-21-30-R0"
+				(path "/ee72ac44-80d7-4001-b898-1221a006b03b/ec168330-9e24-4ba8-8b42-f1f24613dfb2"
+					(reference "C182")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 81.28 90.17 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "36b8079b-70db-46aa-8cf9-93e4c7510220")
+		(property "Reference" "#PWR0347"
+			(at 81.28 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 81.28 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 81.28 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 81.28 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 81.28 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d715f68a-e1d7-4c33-92dd-87da49ac1d25")
+		)
+		(instances
+			(project "Weatherthing-main-21-30-R0"
+				(path "/ee72ac44-80d7-4001-b898-1221a006b03b/ec168330-9e24-4ba8-8b42-f1f24613dfb2"
+					(reference "#PWR0347")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 138.43 90.17 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3a6c78e3-3956-42eb-876f-7035c0a0215b")
+		(property "Reference" "#PWR0357"
+			(at 138.43 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 138.43 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 138.43 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 138.43 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 138.43 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9ad23bf2-fc3e-4091-b903-47c27112b6f0")
+		)
+		(instances
+			(project "Weatherthing-main-21-30-R0"
+				(path "/ee72ac44-80d7-4001-b898-1221a006b03b/ec168330-9e24-4ba8-8b42-f1f24613dfb2"
+					(reference "#PWR0357")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 127 148.59 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "429b0570-8703-4330-97dc-6367a3801423")
+		(property "Reference" "D160"
+			(at 135.382 152.654 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 132.842 155.194 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "weatherthing-footprints:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 134.62 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 136.525 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 127 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C22461793"
+			(at 127 148.59 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Stock" "297"
+			(at 127 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2466edbb-da82-4a07-b50e-9458bd5c5f87")
+		)
+		(pin "3"
+			(uuid "1dc045de-5af6-49b2-b324-cb15f5fe1085")
+		)
+		(pin "2"
+			(uuid "2865d4b2-434d-4ec7-b099-105dd314fc66")
+		)
+		(pin "4"
+			(uuid "eb16baef-5075-4e9c-ac8c-45ca03f25d89")
+		)
+		(instances
+			(project "Weatherthing-main-21-30-R0"
+				(path "/ee72ac44-80d7-4001-b898-1221a006b03b/ec168330-9e24-4ba8-8b42-f1f24613dfb2"
+					(reference "D160")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 81.28 111.76 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4876c3bd-89a5-4a66-aaf2-d730b4bce699")
+		(property "Reference" "#PWR0348"
+			(at 81.28 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 81.28 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 81.28 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 81.28 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 81.28 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2ddd78a3-caf6-469f-a7b6-98ba252c498b")
+		)
+		(instances
+			(project "Weatherthing-main-21-30-R0"
+				(path "/ee72ac44-80d7-4001-b898-1221a006b03b/ec168330-9e24-4ba8-8b42-f1f24613dfb2"
+					(reference "#PWR0348")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 99.06 170.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4879b42c-c5b1-4f1d-afdd-400c12cadec3")
+		(property "Reference" "#PWR0356"
+			(at 99.06 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 99.06 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 99.06 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 99.06 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 99.06 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3d16254e-4ba8-407d-89b7-f2fd6953c1c8")
+		)
+		(instances
+			(project "Weatherthing-main-21-30-R0"
+				(path "/ee72ac44-80d7-4001-b898-1221a006b03b/ec168330-9e24-4ba8-8b42-f1f24613dfb2"
+					(reference "#PWR0356")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Skrubis:100n 50V X7R 0603")
+		(at 52.07 148.59 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "490cdba7-a825-4c11-b177-45e36f99dac1")
+		(property "Reference" "C176"
+			(at 52.07 135.89 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100n 50V X7R 0603"
+			(at 52.07 138.43 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 55.88 147.6248 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 52.07 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 52.07 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C314282"
+			(at 52.07 140.97 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" "Y"
+			(at 52.07 143.51 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9621a426-259c-45d8-8b1c-5a8c2acebd44")
+		)
+		(pin "2"
+			(uuid "035e0cc1-4cf6-4dd7-b432-58bdb06e6556")
+		)
+		(instances
+			(project "Weatherthing-main-21-30-R0"
+				(path "/ee72ac44-80d7-4001-b898-1221a006b03b/ec168330-9e24-4ba8-8b42-f1f24613dfb2"
+					(reference "C176")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 41.91 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4b23db75-8d37-406c-afb9-01eaf9948b9f")
+		(property "Reference" "#PWR0341"
+			(at 41.91 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 41.91 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 41.91 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 41.91 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 41.91 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ad7aedcf-37c1-4102-8fab-81372f93d336")
+		)
+		(instances
+			(project "Weatherthing-main-21-30-R0"
+				(path "/ee72ac44-80d7-4001-b898-1221a006b03b/ec168330-9e24-4ba8-8b42-f1f24613dfb2"
+					(reference "#PWR0341")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 138.43 111.76 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4ddb4e1a-d5c3-4004-b82a-b173e2e89799")
+		(property "Reference" "#PWR0358"
+			(at 138.43 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 138.43 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 138.43 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 138.43 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 138.43 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b7fa07f2-1c4a-4f93-a7e9-a69c2f305ec2")
+		)
+		(instances
+			(project "Weatherthing-main-21-30-R0"
+				(path "/ee72ac44-80d7-4001-b898-1221a006b03b/ec168330-9e24-4ba8-8b42-f1f24613dfb2"
+					(reference "#PWR0358")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 81.28 154.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4fa585c1-5da1-4783-a359-72113b69c0b4")
+		(property "Reference" "#PWR0350"
+			(at 81.28 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 81.28 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 81.28 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 81.28 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 81.28 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0b587001-41f5-4fcd-88da-e061ae6720f0")
+		)
+		(instances
+			(project "Weatherthing-main-21-30-R0"
+				(path "/ee72ac44-80d7-4001-b898-1221a006b03b/ec168330-9e24-4ba8-8b42-f1f24613dfb2"
+					(reference "#PWR0350")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 99.06 105.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "50c16b48-970a-4b8c-9a43-5b2a8de2073a")
+		(property "Reference" "#PWR0353"
+			(at 99.06 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 99.06 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 99.06 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 99.06 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 99.06 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9546a053-eff1-4478-8a2c-d065f69d6dc4")
+		)
+		(instances
+			(project "Weatherthing-main-21-30-R0"
+				(path "/ee72ac44-80d7-4001-b898-1221a006b03b/ec168330-9e24-4ba8-8b42-f1f24613dfb2"
+					(reference "#PWR0353")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 69.85 127 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "56277a15-232a-4cb8-913f-39f3a920650f")
+		(property "Reference" "D154"
+			(at 78.232 131.064 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 75.692 133.604 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "weatherthing-footprints:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 77.47 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 79.375 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 69.85 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C22461793"
+			(at 69.85 127 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Stock" "297"
+			(at 69.85 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f96465e1-6b86-42a7-963b-fd2149dcb1a0")
+		)
+		(pin "3"
+			(uuid "c2317a4b-f3c4-4753-81fb-471bd20cd7bd")
+		)
+		(pin "2"
+			(uuid "a02a85ec-b7cf-42fe-8848-4f2535c57dbe")
+		)
+		(pin "4"
+			(uuid "0b95e285-9d3e-4f2c-a778-053377d51ebd")
+		)
+		(instances
+			(project "Weatherthing-main-21-30-R0"
+				(path "/ee72ac44-80d7-4001-b898-1221a006b03b/ec168330-9e24-4ba8-8b42-f1f24613dfb2"
+					(reference "D154")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 99.06 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5a2d69c4-6363-472d-baf8-76a865d2d6b5")
+		(property "Reference" "#PWR0354"
+			(at 99.06 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 99.06 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 99.06 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 99.06 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 99.06 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ea9c614d-ea06-4c74-843b-71f44b59820b")
+		)
+		(instances
+			(project "Weatherthing-main-21-30-R0"
+				(path "/ee72ac44-80d7-4001-b898-1221a006b03b/ec168330-9e24-4ba8-8b42-f1f24613dfb2"
+					(reference "#PWR0354")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 127 127 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5d8b541f-8425-4442-8b47-4d04e0e2a82f")
+		(property "Reference" "D159"
+			(at 135.382 131.064 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 132.842 133.604 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "weatherthing-footprints:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 134.62 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 136.525 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 127 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C22461793"
+			(at 127 127 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Stock" "297"
+			(at 127 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7cdb8493-c708-4798-911e-df93ceb1cf5f")
+		)
+		(pin "3"
+			(uuid "ca113c03-3ca0-41e1-bba4-39e7b6cd3005")
+		)
+		(pin "2"
+			(uuid "0e3c73bc-a2f7-40d8-a943-644b4e718ba5")
+		)
+		(pin "4"
+			(uuid "a43279f4-ddab-4b4f-89b4-07fedc83dc6f")
+		)
+		(instances
+			(project "Weatherthing-main-21-30-R0"
+				(path "/ee72ac44-80d7-4001-b898-1221a006b03b/ec168330-9e24-4ba8-8b42-f1f24613dfb2"
+					(reference "D159")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 41.91 148.59 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "63c4c0e9-4b4f-4471-a8fd-29f3e91040bd")
+		(property "Reference" "#PWR0342"
+			(at 41.91 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 41.91 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 41.91 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 41.91 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 41.91 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4a55607c-ada8-43c8-a2a6-21c305a91108")
+		)
+		(instances
+			(project "Weatherthing-main-21-30-R0"
+				(path "/ee72ac44-80d7-4001-b898-1221a006b03b/ec168330-9e24-4ba8-8b42-f1f24613dfb2"
+					(reference "#PWR0342")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Skrubis:100n 50V X7R 0603")
+		(at 109.22 127 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "63f856c2-8074-439b-9f75-256939fbbd87")
+		(property "Reference" "C180"
+			(at 109.22 114.3 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100n 50V X7R 0603"
+			(at 109.22 116.84 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 113.03 126.0348 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 109.22 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 109.22 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C314282"
+			(at 109.22 119.38 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" "Y"
+			(at 109.22 121.92 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4e5666ef-64ed-4e1b-8dbe-728acdfd8cd2")
+		)
+		(pin "2"
+			(uuid "f269c79f-d9b5-42fb-a6d4-294836d61995")
+		)
+		(instances
+			(project "Weatherthing-main-21-30-R0"
+				(path "/ee72ac44-80d7-4001-b898-1221a006b03b/ec168330-9e24-4ba8-8b42-f1f24613dfb2"
+					(reference "C180")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 41.91 62.23 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "663c21c8-3a26-45d9-be6e-60b81227977c")
+		(property "Reference" "#PWR0338"
+			(at 41.91 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 41.91 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 41.91 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 41.91 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 41.91 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4754caf2-3a55-4adf-a479-75edb1864e3b")
+		)
+		(instances
+			(project "Weatherthing-main-21-30-R0"
+				(path "/ee72ac44-80d7-4001-b898-1221a006b03b/ec168330-9e24-4ba8-8b42-f1f24613dfb2"
+					(reference "#PWR0338")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 127 83.82 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "68ba6e51-d04b-498e-b052-52f680933ad9")
+		(property "Reference" "D157"
+			(at 135.382 87.884 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 132.842 90.424 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "weatherthing-footprints:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 134.62 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 136.525 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 127 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C22461793"
+			(at 127 83.82 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Stock" "297"
+			(at 127 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "eef09bb6-bafd-45c6-a90d-8078a19faca6")
+		)
+		(pin "3"
+			(uuid "93f8e64f-70ca-4c49-a41e-fd6176b73e12")
+		)
+		(pin "2"
+			(uuid "966928d3-6b23-4432-bd7a-34b517926844")
+		)
+		(pin "4"
+			(uuid "78f890a9-9ba1-4257-a57a-af44c0fa06a5")
+		)
+		(instances
+			(project "Weatherthing-main-21-30-R0"
+				(path "/ee72ac44-80d7-4001-b898-1221a006b03b/ec168330-9e24-4ba8-8b42-f1f24613dfb2"
+					(reference "D157")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Skrubis:100n 50V X7R 0603")
+		(at 52.07 83.82 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6c20c0ac-9cbe-4a7a-83ca-ce1db40fa61d")
+		(property "Reference" "C173"
+			(at 52.07 71.12 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100n 50V X7R 0603"
+			(at 52.07 73.66 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 55.88 82.8548 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 52.07 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 52.07 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C314282"
+			(at 52.07 76.2 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" "Y"
+			(at 52.07 78.74 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "79541432-72da-4cf1-a388-af5b139406f2")
+		)
+		(pin "2"
+			(uuid "b6aac4ea-0ec6-4ea2-b132-2086bbd6be83")
+		)
+		(instances
+			(project "Weatherthing-main-21-30-R0"
+				(path "/ee72ac44-80d7-4001-b898-1221a006b03b/ec168330-9e24-4ba8-8b42-f1f24613dfb2"
+					(reference "C173")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 138.43 133.35 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6feb0ab3-2bc2-42bb-9f55-51b30f1c639d")
+		(property "Reference" "#PWR0359"
+			(at 138.43 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 138.43 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 138.43 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 138.43 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 138.43 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "42560b69-e55f-4b56-a6d4-4901bbcdc289")
+		)
+		(instances
+			(project "Weatherthing-main-21-30-R0"
+				(path "/ee72ac44-80d7-4001-b898-1221a006b03b/ec168330-9e24-4ba8-8b42-f1f24613dfb2"
+					(reference "#PWR0359")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 81.28 133.35 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7aa13243-ecbe-4914-8848-8d28b8944637")
+		(property "Reference" "#PWR0349"
+			(at 81.28 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 81.28 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 81.28 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 81.28 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 81.28 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c66d15fb-2ca2-419c-ae1b-3c7728477c1d")
+		)
+		(instances
+			(project "Weatherthing-main-21-30-R0"
+				(path "/ee72ac44-80d7-4001-b898-1221a006b03b/ec168330-9e24-4ba8-8b42-f1f24613dfb2"
+					(reference "#PWR0349")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 69.85 40.64 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7fb4dd9e-fec4-4575-9c58-c0e05923b8f4")
+		(property "Reference" "D150"
+			(at 78.232 44.704 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 75.692 47.244 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "weatherthing-footprints:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 77.47 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 79.375 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 69.85 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C22461793"
+			(at 69.85 40.64 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Stock" "297"
+			(at 69.85 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "55e668a5-d2d2-4577-b0fc-82ca59489be6")
+		)
+		(pin "3"
+			(uuid "d1f4374c-8da4-4ce2-801d-ed61628f5c9d")
+		)
+		(pin "2"
+			(uuid "301b73c3-e0a6-44b1-a439-6487a4a8c703")
+		)
+		(pin "4"
+			(uuid "e0434850-47d0-4a88-8eda-61e3ae2bb413")
+		)
+		(instances
+			(project "Weatherthing-main-21-30-R0"
+				(path "/ee72ac44-80d7-4001-b898-1221a006b03b/ec168330-9e24-4ba8-8b42-f1f24613dfb2"
+					(reference "D150")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 138.43 176.53 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "90a40489-2fec-4ff9-8ea4-090620912a44")
+		(property "Reference" "#PWR0361"
+			(at 138.43 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 138.43 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 138.43 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 138.43 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 138.43 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c7555ac2-5f67-4cd6-9a8e-681b2c3fc6b7")
+		)
+		(instances
+			(project "Weatherthing-main-21-30-R0"
+				(path "/ee72ac44-80d7-4001-b898-1221a006b03b/ec168330-9e24-4ba8-8b42-f1f24613dfb2"
+					(reference "#PWR0361")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 99.06 148.59 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "90be493d-d229-4863-960f-bd5dd424d765")
+		(property "Reference" "#PWR0355"
+			(at 99.06 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 99.06 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 99.06 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 99.06 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 99.06 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a8ac25bd-165f-465d-8d80-0254b162074d")
+		)
+		(instances
+			(project "Weatherthing-main-21-30-R0"
+				(path "/ee72ac44-80d7-4001-b898-1221a006b03b/ec168330-9e24-4ba8-8b42-f1f24613dfb2"
+					(reference "#PWR0355")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 69.85 148.59 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "91c0123f-8675-416d-8697-61c5135e3d56")
+		(property "Reference" "D155"
+			(at 78.232 152.654 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 75.692 155.194 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "weatherthing-footprints:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 77.47 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 79.375 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 69.85 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C22461793"
+			(at 69.85 148.59 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Stock" "297"
+			(at 69.85 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7c02f374-1b22-477f-8d16-86be9f8d48bf")
+		)
+		(pin "3"
+			(uuid "1bdbfb43-fe24-4095-a2b9-7863d2ed2709")
+		)
+		(pin "2"
+			(uuid "530428aa-9294-4740-871a-8c8401b1a892")
+		)
+		(pin "4"
+			(uuid "d1946b8c-a43c-460e-b728-f40a6aa37fa3")
+		)
+		(instances
+			(project "Weatherthing-main-21-30-R0"
+				(path "/ee72ac44-80d7-4001-b898-1221a006b03b/ec168330-9e24-4ba8-8b42-f1f24613dfb2"
+					(reference "D155")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 41.91 170.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "99a30620-81eb-42dc-921b-81f87e3a2a65")
+		(property "Reference" "#PWR0343"
+			(at 41.91 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 41.91 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 41.91 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 41.91 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 41.91 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "af051721-a533-4833-9acf-bfbaac04d3f9")
+		)
+		(instances
+			(project "Weatherthing-main-21-30-R0"
+				(path "/ee72ac44-80d7-4001-b898-1221a006b03b/ec168330-9e24-4ba8-8b42-f1f24613dfb2"
+					(reference "#PWR0343")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 138.43 154.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9e2051be-65d7-4818-bacb-1bb7630fdacc")
+		(property "Reference" "#PWR0360"
+			(at 138.43 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 138.43 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 138.43 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 138.43 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 138.43 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b33aa92c-f3a5-404e-b5ed-64dd49166afd")
+		)
+		(instances
+			(project "Weatherthing-main-21-30-R0"
+				(path "/ee72ac44-80d7-4001-b898-1221a006b03b/ec168330-9e24-4ba8-8b42-f1f24613dfb2"
+					(reference "#PWR0360")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VBUS")
+		(at 60.96 24.13 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a10fc2f6-e611-4f26-938a-56d6e33204fb")
+		(property "Reference" "#PWR0344"
+			(at 60.96 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VBUS"
+			(at 60.96 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 60.96 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 60.96 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VBUS\""
+			(at 60.96 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fe3e4f34-ec51-448c-ac4e-82b655953401")
+		)
+		(instances
+			(project "Weatherthing-main-21-30-R0"
+				(path "/ee72ac44-80d7-4001-b898-1221a006b03b/ec168330-9e24-4ba8-8b42-f1f24613dfb2"
+					(reference "#PWR0344")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 69.85 83.82 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a2326a90-93f7-437d-a018-d27de5f952a0")
+		(property "Reference" "D152"
+			(at 78.232 87.884 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 75.692 90.424 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "weatherthing-footprints:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 77.47 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 79.375 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 69.85 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C22461793"
+			(at 69.85 83.82 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Stock" "297"
+			(at 69.85 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b953db40-c5e4-415b-877c-866c5f377c6f")
+		)
+		(pin "3"
+			(uuid "fd8a3ee9-0729-4a22-acac-cbb209893439")
+		)
+		(pin "2"
+			(uuid "025e1570-d5ef-486d-af23-ab9f1072863b")
+		)
+		(pin "4"
+			(uuid "e663ca09-8d06-4813-835a-548c57d45d07")
+		)
+		(instances
+			(project "Weatherthing-main-21-30-R0"
+				(path "/ee72ac44-80d7-4001-b898-1221a006b03b/ec168330-9e24-4ba8-8b42-f1f24613dfb2"
+					(reference "D152")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Skrubis:100n 50V X7R 0603")
+		(at 109.22 83.82 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a2d04dac-495c-4896-80b1-aa009f4b152a")
+		(property "Reference" "C178"
+			(at 109.22 71.12 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100n 50V X7R 0603"
+			(at 109.22 73.66 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 113.03 82.8548 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 109.22 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 109.22 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C314282"
+			(at 109.22 76.2 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" "Y"
+			(at 109.22 78.74 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6fc61d11-9b69-49f3-bf0c-4dfae8c68b85")
+		)
+		(pin "2"
+			(uuid "3fd8b916-5c75-42b4-8bbf-d246a10330e4")
+		)
+		(instances
+			(project "Weatherthing-main-21-30-R0"
+				(path "/ee72ac44-80d7-4001-b898-1221a006b03b/ec168330-9e24-4ba8-8b42-f1f24613dfb2"
+					(reference "C178")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 127 170.18 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a353bb9c-d54d-4806-bf36-890ec18b51f5")
+		(property "Reference" "D161"
+			(at 135.382 174.244 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 132.842 176.784 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "weatherthing-footprints:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 134.62 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 136.525 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 127 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C22461793"
+			(at 127 170.18 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Stock" "297"
+			(at 127 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "73cdc105-1f98-4222-8be7-355b1dbc2899")
+		)
+		(pin "3"
+			(uuid "4e93b002-cd32-4bb5-b5f7-a35cece64778")
+		)
+		(pin "2"
+			(uuid "f4f63d79-b626-4757-8fb2-aea491fa78fd")
+		)
+		(pin "4"
+			(uuid "fa9e2490-fbec-4082-84fc-8ac1868c88c5")
+		)
+		(instances
+			(project "Weatherthing-main-21-30-R0"
+				(path "/ee72ac44-80d7-4001-b898-1221a006b03b/ec168330-9e24-4ba8-8b42-f1f24613dfb2"
+					(reference "D161")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 41.91 83.82 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a437b518-8194-4445-b2d6-d1994695bf81")
+		(property "Reference" "#PWR0339"
+			(at 41.91 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 41.91 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 41.91 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 41.91 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 41.91 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2220d9fe-e374-4378-b4b3-e77a169fd4d4")
+		)
+		(instances
+			(project "Weatherthing-main-21-30-R0"
+				(path "/ee72ac44-80d7-4001-b898-1221a006b03b/ec168330-9e24-4ba8-8b42-f1f24613dfb2"
+					(reference "#PWR0339")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Skrubis:100n 50V X7R 0603")
+		(at 52.07 127 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a98967e6-b6f3-4aa5-82d8-09287c3101d0")
+		(property "Reference" "C175"
+			(at 52.07 114.3 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100n 50V X7R 0603"
+			(at 52.07 116.84 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 55.88 126.0348 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 52.07 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 52.07 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C314282"
+			(at 52.07 119.38 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" "Y"
+			(at 52.07 121.92 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "774d5d39-8b32-4497-af4c-08959408664e")
+		)
+		(pin "2"
+			(uuid "816e87a3-98ed-4e29-97c2-26424c04cbd7")
+		)
+		(instances
+			(project "Weatherthing-main-21-30-R0"
+				(path "/ee72ac44-80d7-4001-b898-1221a006b03b/ec168330-9e24-4ba8-8b42-f1f24613dfb2"
+					(reference "C175")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 127 105.41 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "af3e5515-8f77-41e4-8f75-4fffd1a998b9")
+		(property "Reference" "D158"
+			(at 135.382 109.474 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 132.842 112.014 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "weatherthing-footprints:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 134.62 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 136.525 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 127 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C22461793"
+			(at 127 105.41 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Stock" "297"
+			(at 127 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2e5ea69e-cb47-4c83-9f40-ad6a5af744cf")
+		)
+		(pin "3"
+			(uuid "da479230-ecd4-48e1-b7d3-56f20fd544f6")
+		)
+		(pin "2"
+			(uuid "7fbe9b55-0490-4bae-bdca-da960c70ed49")
+		)
+		(pin "4"
+			(uuid "f43bfb9c-555a-45d1-a2a9-142e2b33c218")
+		)
+		(instances
+			(project "Weatherthing-main-21-30-R0"
+				(path "/ee72ac44-80d7-4001-b898-1221a006b03b/ec168330-9e24-4ba8-8b42-f1f24613dfb2"
+					(reference "D158")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 69.85 105.41 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c785f330-c6f7-4a74-a471-459c7668b7c4")
+		(property "Reference" "D153"
+			(at 78.232 109.474 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 75.692 112.014 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "weatherthing-footprints:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 77.47 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 79.375 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 69.85 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C22461793"
+			(at 69.85 105.41 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Stock" "297"
+			(at 69.85 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ddd14021-c17b-4ff4-b847-0d49ca91d611")
+		)
+		(pin "3"
+			(uuid "613f8575-f280-4e27-94e8-02df4faa9737")
+		)
+		(pin "2"
+			(uuid "2c7109bd-1186-4a21-8023-258aa2dd0f88")
+		)
+		(pin "4"
+			(uuid "fc42b78d-97b6-44c5-956d-6bc52a396deb")
+		)
+		(instances
+			(project "Weatherthing-main-21-30-R0"
+				(path "/ee72ac44-80d7-4001-b898-1221a006b03b/ec168330-9e24-4ba8-8b42-f1f24613dfb2"
+					(reference "D153")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Skrubis:100n 50V X7R 0603")
+		(at 52.07 105.41 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cb41e55f-201b-4c1d-8c9b-a4a4fc97e74c")
+		(property "Reference" "C174"
+			(at 52.07 92.71 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100n 50V X7R 0603"
+			(at 52.07 95.25 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 55.88 104.4448 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 52.07 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 52.07 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C314282"
+			(at 52.07 97.79 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" "Y"
+			(at 52.07 100.33 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ef544c59-c855-4732-9cbc-51d714cfd1f7")
+		)
+		(pin "2"
+			(uuid "19003ea1-e477-4a07-8cd9-364c8d44eda0")
+		)
+		(instances
+			(project "Weatherthing-main-21-30-R0"
+				(path "/ee72ac44-80d7-4001-b898-1221a006b03b/ec168330-9e24-4ba8-8b42-f1f24613dfb2"
+					(reference "C174")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Skrubis:100n 50V X7R 0603")
+		(at 109.22 148.59 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d3428332-4680-451d-82b5-dd0bbf130dc3")
+		(property "Reference" "C181"
+			(at 109.22 135.89 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100n 50V X7R 0603"
+			(at 109.22 138.43 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 113.03 147.6248 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 109.22 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 109.22 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C314282"
+			(at 109.22 140.97 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" "Y"
+			(at 109.22 143.51 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "78160cda-3538-43b7-863b-a00b7d7d0151")
+		)
+		(pin "2"
+			(uuid "ad72abcf-9816-457a-8422-ec60d7528505")
+		)
+		(instances
+			(project "Weatherthing-main-21-30-R0"
+				(path "/ee72ac44-80d7-4001-b898-1221a006b03b/ec168330-9e24-4ba8-8b42-f1f24613dfb2"
+					(reference "C181")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 81.28 46.99 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d696231d-d86d-4128-9ae1-95da142d0d97")
+		(property "Reference" "#PWR0345"
+			(at 81.28 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 81.28 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 81.28 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 81.28 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 81.28 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bee21c5f-e8ec-4983-a1a6-eef0db663c04")
+		)
+		(instances
+			(project "Weatherthing-main-21-30-R0"
+				(path "/ee72ac44-80d7-4001-b898-1221a006b03b/ec168330-9e24-4ba8-8b42-f1f24613dfb2"
+					(reference "#PWR0345")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 81.28 176.53 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "de65f27a-9808-4eaa-b84d-b8eb0a40533a")
+		(property "Reference" "#PWR0351"
+			(at 81.28 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 81.28 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 81.28 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 81.28 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 81.28 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bbadd584-c9a4-452e-a386-7ec4301767df")
+		)
+		(instances
+			(project "Weatherthing-main-21-30-R0"
+				(path "/ee72ac44-80d7-4001-b898-1221a006b03b/ec168330-9e24-4ba8-8b42-f1f24613dfb2"
+					(reference "#PWR0351")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Skrubis:100n 50V X7R 0603")
+		(at 109.22 105.41 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f323d228-98cf-444b-b5b0-b73b514e3558")
+		(property "Reference" "C179"
+			(at 109.22 92.71 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100n 50V X7R 0603"
+			(at 109.22 95.25 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 113.03 104.4448 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 109.22 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 109.22 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C314282"
+			(at 109.22 97.79 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" "Y"
+			(at 109.22 100.33 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "60c2c1cf-bfb8-4c10-bc06-37436126153b")
+		)
+		(pin "2"
+			(uuid "6808bc9e-8452-41b5-9f90-dbbde7c020f6")
+		)
+		(instances
+			(project "Weatherthing-main-21-30-R0"
+				(path "/ee72ac44-80d7-4001-b898-1221a006b03b/ec168330-9e24-4ba8-8b42-f1f24613dfb2"
+					(reference "C179")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 69.85 62.23 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fa10c93e-8324-48c7-8d0a-24449ff53ded")
+		(property "Reference" "D151"
+			(at 78.232 66.294 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 75.692 68.834 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "weatherthing-footprints:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 77.47 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 79.375 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 69.85 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C22461793"
+			(at 69.85 62.23 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Stock" "297"
+			(at 69.85 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8e6f0182-7204-4872-913f-6118a6cc61df")
+		)
+		(pin "3"
+			(uuid "b79b5d57-59c3-4820-9dac-496beb96b967")
+		)
+		(pin "2"
+			(uuid "914b97a7-6fd0-47a6-8e12-e0405cbeb3b4")
+		)
+		(pin "4"
+			(uuid "a258998e-ad40-4394-b8cb-68b6cad2b2be")
+		)
+		(instances
+			(project "Weatherthing-main-21-30-R0"
+				(path "/ee72ac44-80d7-4001-b898-1221a006b03b/ec168330-9e24-4ba8-8b42-f1f24613dfb2"
+					(reference "D151")
+					(unit 1)
+				)
+			)
+		)
+	)
+)

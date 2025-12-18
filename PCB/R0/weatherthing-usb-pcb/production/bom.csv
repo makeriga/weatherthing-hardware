@@ -1,0 +1,8 @@
+﻿Designator,Footprint,Quantity,Value,LCSC Part #
+J1,USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal,1,USB_C_Receptacle_USB2.0_16P,
+TP1,pad-28-35,1,VCC,
+TP2,pad-28-35,1,CC1,
+TP3,pad-28-35,1,CC2,
+TP4,pad-28-35,1,DN,
+TP5,pad-28-35,1,DP,
+TP6,pad-28-35,1,GND,
